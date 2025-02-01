@@ -80,8 +80,8 @@
     </header>
     <main class="md:container mx-auto my-5">
       <!-- banner section -->
-      <section>
-        <div class="max-w-md pl-10">
+      <section class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="max-w-md items-left">
           <h1 class="mb-5 text-5xl font-bold">
             Pamper Your Pet, Because They Deserve the Bes
           </h1>
@@ -94,7 +94,7 @@
           </button>
         </div>
         <div
-          class="hero min-h-screen lg:relative sm:bg-center"
+          class="hero h-[500px] bg-contain bg-no-repeat"
           style="background-image: url(./assets/cat-big1.png)"
         ></div>
       </section>
@@ -220,14 +220,13 @@
         </div>
       </section>
       <!-- Trending -->
-      <section class="my-10">
+      <section class="my-10 px-3">
         <div class="">
           <h1 class="text-4xl font-bold my-5">Trending Pet Products</h1>
-          <!-- <div class="max-w-96 bg-[#F9DF8A]">akash</div> -->
           <div class="grid lg:grid-cols-5 lg:grid-rows-3 sm:grid-cols-2 gap-2">
             <!-- Grid large -->
             <div
-              class="bg-[#F9DF8A] rounded-xl text-left col-span-2 row-span-3"
+              class="bg-[#F9DF8A] rounded-xl text-left col-span-2 row-span-3 relative min-h-[400px]"
             >
               <div class="px-8">
                 <h3 class="pt-12 font-bold text-xl">T- Shirt For Dogs</h3>
@@ -237,7 +236,7 @@
                 </p>
                 <button class="pb-2 btn btn-outline">Shop Now</button>
                 <img
-                  class="justify-self-end"
+                  class="justify-self-end absolute top-10 right-10"
                   src="./assets/cute-pet-small.png"
                   alt=""
                 />
@@ -348,7 +347,7 @@
               </div>
             </div>
             <!-- Grid9 -->
-            <div class="lg:block sm:hidden">
+            <div class="hidden lg:block">
               <div
                 class="bg-[#ffffff] hover:bg-[#F9DF8A] rounded-xl max-w-64 max-h-28 flex justify-around items-center"
               >
@@ -365,9 +364,11 @@
           </div>
         </div>
       </section>
+      <!-- Low price -->
+      <section><div class="">Everyday low Price</div></section>
     </main>
     <!-- footer section -->
-    <footer class="footer bg-[#FFDC26] p-40 sm:p-4 items-center">
+    <footer class="footer bg-[#FFDC26] p-10 sm:p-4 items-center lg:py-20">
       <nav class="mb-5">
         <div class="flex items-center">
           <img src="./assets/logo-footer.png" alt="" />
